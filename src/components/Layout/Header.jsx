@@ -1,5 +1,5 @@
-import React from "react";
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment } from "react";
+
 import classes from "./Header.module.css";
 import foodHeaderImg from "../../assets/meals.jpg";
 import HeaderButton from "./HeaderCartButton";
@@ -9,7 +9,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>AvgAmericanFood</h1>
-        <HeaderButton />
+        <HeaderButton onClick={props.onShowCart} />
       </header>
       <div>
         <img
